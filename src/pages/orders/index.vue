@@ -5,8 +5,8 @@ import Layout from '../../layouts/Layout.vue';
 
 <template>
   <Layout>
-    <div>
-      List orders
+    <div class="m-5">
+      <h1 class="text-3xl font-bold">Orders</h1>
     </div>
   </Layout>
 </template>
