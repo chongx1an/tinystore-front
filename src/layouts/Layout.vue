@@ -1,12 +1,33 @@
 <template>
   <div class="layout">
-    <sidebar>
-
-      <div class="p-5">
-        <img src="../assets/logo.svg" />
+    <sidebar class="p-5">
+      <div class="flex items-center">
+        <img src="../assets/logo.svg" height="50" width="50" />
+        <h1 class="text-2xl ml-2">TinyStore</h1>
       </div>
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
+      <div class="mt-5 flex flex-col">
+        <router-link to="/">
+
+          <div class="px-5 py-3 w-full rounded hover:bg-gray-100">
+            Home
+          </div>
+        </router-link>
+
+        <router-link to="/products">
+          <div class="px-5 py-3 w-full rounded hover:bg-gray-100">
+            Products
+          </div>
+        </router-link>
+
+        <router-link to="/orders">
+          <div class="px-5 py-3 w-full rounded hover:bg-gray-100">
+            Orders
+          </div>
+        </router-link>
+
+
+
+      </div>
     </sidebar>
     <main>
       <slot />
