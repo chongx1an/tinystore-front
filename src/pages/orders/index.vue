@@ -6,7 +6,7 @@ import Layout from '../../layouts/Layout.vue';
 <template>
   <Layout>
     <div>
-      List products
+      List orders
     </div>
   </Layout>
 </template>
