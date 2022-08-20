@@ -7,7 +7,6 @@
       </div>
       <div class="mt-5 flex flex-col">
         <router-link to="/">
-
           <div class="px-5 py-3 w-full rounded hover:bg-gray-100">
             Home
           </div>
@@ -24,15 +23,12 @@
             Orders
           </div>
         </router-link>
-
-
-
       </div>
     </sidebar>
-    <main>
+    <main class="p-5">
       <slot />
     </main>
-    <footer>
+    <footer class="p-5">
       &copy; TinyStore
     </footer>
   </div>
@@ -55,12 +51,10 @@ footer {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 10% 80% 5%;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 92%;
   grid-template-areas:
-    "sidebar main main main main"
-    "sidebar main main main main"
-    "sidebar main main main main"
-    "footer footer footer footer footer";
+    "sidebar main"
+    "footer footer";
 }
 </style>
