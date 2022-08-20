@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <sidebar class="p-5">
+    <sidebar class="p-5 border border-gray-100 overflow-clip">
       <div class="flex items-center">
         <img src="../assets/logo.svg" height="50" width="50" />
         <h1 class="text-2xl ml-2">TinyStore</h1>
@@ -28,7 +28,7 @@
     <main class="p-5">
       <slot />
     </main>
-    <footer class="p-5">
+    <footer class="p-5 border border-gray-100">
       &copy; TinyStore
     </footer>
   </div>
