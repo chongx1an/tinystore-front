@@ -1,6 +1,10 @@
 <template>
   <div class="layout">
     <sidebar>
+
+      <div class="p-5">
+        <img src="../assets/logo.svg" />
+      </div>
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
     </sidebar>
