@@ -1,5 +1,20 @@
 <script setup>
 import Layout from '../../layouts/Layout.vue';
+import { onMounted, inject } from 'vue'
+
+const api = inject('api')
+
+function listProducts() {
+
+  api.get("/products").then((result) => {
+    console.log(result)
+  })
+
+}
+
+onMounted(() => {
+  listProducts()
+})
 
 </script>
 
