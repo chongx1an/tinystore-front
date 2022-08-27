@@ -2,7 +2,7 @@
   <div class="layout">
     <sidebar class="p-5 border border-gray-100 overflow-clip">
       <div class="flex items-center">
-        <img src="../assets/logo.svg" height="50" width="50" />
+        <img src="@/assets/logo.svg" height="50" width="50" />
         <h1 class="text-2xl ml-2">TinyStore</h1>
       </div>
       <div class="mt-5 flex flex-col">
@@ -25,7 +25,7 @@
         </router-link>
       </div>
     </sidebar>
-    <main class="p-5">
+    <main class="p-5 bg-gray-50">
       <slot />
     </main>
     <footer class="p-5 border border-gray-100">
